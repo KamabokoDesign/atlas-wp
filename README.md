@@ -35,6 +35,8 @@ The reason for favouring GraphQL is that it's faster than the REST API and Graph
 1. In the explorer you'll see all the native WP data you can pull
 1. For example you can do something like this in your Next.js build
 
+So why use GraphQL over the native WP REST API? Maybe [this may answer your questions](https://www.wpgraphql.com/docs/wpgraphql-vs-wp-rest-api/)
+
 
 ## Some other plugins you can use (but I need to do more research)
 1. Advanced Custom Fields
