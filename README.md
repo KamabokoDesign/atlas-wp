@@ -41,3 +41,30 @@ The reason for favouring GraphQL is that it's faster than the REST API and Graph
 2. Custom Post Type UI
 3. WPGraphQL Custom Post Type UI
 4. WPGraphQL for Advanced Custom Fields
+
+
+## CPT UI
+1. Post Type Slug `teammembers`
+2. Plural Label `Team Members`
+3. Singular Label `Team Member`
+4. Show in GraphQL `True`
+5. Featured Image `unchecked`
+6. GraphQL Single Name `teammember`
+7. GraphQL Plural Name `teammembers`
+8. Add new Team Member, enter the title! And you're in.
+
+But dang no other fields? That's lame, that's where ACF comes in. 
+1. Advanced Custom Fields
+2. Add New Field Group `TeamMember`
+3. Field Label `Bio`
+4. Field Name `bio`
+5. Field Type `text area`
+6. Add Field +
+7. Field Label `Twitter`
+8. Field Name `twitter`
+9. Field Type `text`
+10. Location: Show this field if Post Type is equal to Team Member
+11. Show in GraphQL `Yes`
+12. GraphQL Field Name `acfTeamMember`
+
+More fields should show up in your CPT!
