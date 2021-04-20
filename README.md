@@ -33,46 +33,11 @@ The reason for favouring GraphQL is that it's faster than the REST API and Graph
 ## GraphQL
 1. Enter the GraphQL IDE in your wordpress admin
 1. In the explorer you'll see all the native WP data you can pull
-1. For example you can do something like this:
-```
-import {useQuery, gql} from "@apollo/client";
+1. For example you can do something like this in your Next.js build
 
-const authorsQuery = gql`
- {
-  users {
-   nodes {
-    avatar {
-     url
-    }
-    firstName
-    lastName
-    roles {
-     nodes {
-     displayName
-     }
-    }
-   }
-  }
- }`;
- 
- const AuthorsPage = () => {
-  const {data} useQuery(authorsQuery);
-  const authors = data?.users?.nodes ?? [];
-  
-  return (
-  <>
-  <div>
-   <h1>Authors Page!</h1>
-   <ol>
-    {authors.map((author: any) => (
-     <li>
-      <img src={author.avatar.url} alt="" />
-      <p>{author.firstName} {author.lastName}</p>
-     </li>
-    ))}
-   </ol>
-  </div>
-  </>);
- }
- 
- export default AuthorsPage;
+
+## Some other plugins you can use (but I need to do more research)
+1. Advanced Custom Fields
+2. Custom Post Type UI
+3. WPGraphQL Custom Post Type UI
+4. WPGraphQL for Advanced Custom Fields
