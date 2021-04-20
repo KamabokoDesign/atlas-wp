@@ -59,7 +59,8 @@ const authorsQuery = gql`
   const {data} useQuery(authorsQuery);
   const authors = data?.users?.nodes ?? [];
   
-  return 
+  return (
+  <>
   <div>
    <h1>Authors Page!</h1>
    <ol>
@@ -70,7 +71,8 @@ const authorsQuery = gql`
      </li>
     ))}
    </ol>
-  </div>;
+  </div>
+  </>);
  }
  
  export default AuthorsPage;
