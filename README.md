@@ -67,4 +67,4 @@ But dang no other fields? That's lame, that's where ACF comes in.
 11. Show in GraphQL `Yes`
 12. GraphQL Field Name `acfTeamMember`
 
-More fields should show up in your CPT! For more info [check our this tutorial](https://www.youtube.com/watch?v=Yp9zq384X5c&ab_channel=Gatsby)
+More fields should show up in your CPT! For more info [check out this tutorial](https://www.youtube.com/watch?v=Yp9zq384X5c&ab_channel=Gatsby)
